@@ -82,11 +82,12 @@ body {
         margin-bottom: 10px;
     }
 }
-.mapStyle {
+/* .mapStyle {
     display: flex;
     justify-content: center;
 }
+
 #map {
-    height: 400px; /* Set the height of the map */
-    width: 500px;  /* Set the width of the map */
-}
+    height: 400px;
+    width: 500px;  
+} */
