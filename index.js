@@ -19,19 +19,19 @@ function showPosition(position) {
     // Get the nearest city using reverse geocoding and then fetch weather data
     getCityAndWeather(lat, lon);
 
-
-        var map = L.map('map').setView([lat, lon], 13);  // Coordinates of London (51.505, -0.09)
+    //WITH MAP
+        // var map = L.map('map').setView([lat, lon], 13);  // Coordinates of London (51.505, -0.09)
     
-            // Step 3: Add a tile layer (this provides the visual tiles of the map)
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
+        //     // Step 3: Add a tile layer (this provides the visual tiles of the map)
+        //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        //     }).addTo(map);
     
-            // Step 4: Add a marker to the specified location
-            var marker = L.marker([lat, lon]).addTo(map);
+        //     // Step 4: Add a marker to the specified location
+        //     var marker = L.marker([lat, lon]).addTo(map);
     
-            // Optional: Add popup to the marker
-            marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+        //     // Optional: Add popup to the marker
+        //     marker.bindPopup("<b>You are Here!</b><br>current location.").openPopup();
     
 }
 
